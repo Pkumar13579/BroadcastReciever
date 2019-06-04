@@ -16,6 +16,9 @@ class MyBroadCastReciever : BroadcastReceiver() {
             Intent.ACTION_POWER_DISCONNECTED ->{
                 Toast.makeText(p0,"charging OFF",Toast.LENGTH_LONG).show()
             }
+            Intent.ACTION_AIRPLANE_MODE_CHANGED ->{
+                Toast.makeText(p0,"Aeroplane mode Changed",Toast.LENGTH_LONG).show()
+            }
         }
 
     }
